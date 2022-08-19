@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="p5.js a JS client-side library for creating graphic and interactive experiences, based on the core principles of Processing.">
     <title tabindex="1">learn | p5.js</title>
-    <link rel="stylesheet" href="/assets/css/all.css?v=0e8127">
+    <link rel="stylesheet" href="/assets/css/all.css?v=05db10">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
 
@@ -73,11 +73,7 @@
         <li><a href="/hi/books/">पुस्तकें</a></li>
         <li><a href="/hi/community/">समुदाय</a></li>
         <li><a href="https://showcase.p5js.org">प्रदर्शन</a></li>
-        <li><a href="https://discourse.processing.org/c/p5js" target=_blank class="other-link">फोरम</a></li>
-        <li><a href="http://github.com/processing/p5.js" target=_blank class="other-link">GitHub</a></li>
-        <li><a href="http://twitter.com/p5xjs" target=_blank class="other-link">Twitter</a></li>
-        <li><a href="https://www.instagram.com/p5xjs/" target=_blank class="other-link">Instagram</a></li>
-        <li><a href="https://discord.gg/SHQ8dH25r9" target=_blank class="other-link">Discord</a></li>
+  
       </ul>
     </nav>
   </div>
@@ -117,7 +113,7 @@
 
       <!-- this script only needs to get added once even if there are multiple widget instances -->
       <script src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
-      <script type="text/p5" data-autoplay data-p5-version="1.4.1">
+      <script type="text/p5" data-autoplay data-p5-version="1.4.2">
         function draw() {
   background(150);
   stroke(0);
@@ -147,7 +143,7 @@
 
       <p>यह मानता है कि रंग सभी के रूप में संभव के रूप में उज्ज्वल हैं, लेकिन निश्चित रूप से, आपके पास उपलब्ध रंग की एक सीमा है, इसलिए कुछ लाल प्लस कुछ हरे रंग के साथ कुछ नीले बराबर ग्रे, और लाल रंग का एक सा नीला नीला बैंगनी के बराबर है। हालांकि यह कुछ करने के लिए इस्तेमाल किया जा सकता है, जितना अधिक आप आरजीबी रंग के साथ कार्यक्रम और प्रयोग करते हैं, उतना ही यह सहज हो जाएगा, बहुत कुछ अपनी उंगलियों के साथ घूमता रंगों की तरह। और निश्चित रूप से आप कुछ नीले रंग के साथ कुछ लाल मिश्रण नहीं कर सकते, आपको एक सटीक राशि प्रदान करनी होगी। ग्रेस्केल के साथ, व्यक्तिगत रंग तत्वों को 0 (उस रंग में से कोई भी) से लेकर 255 तक (जितना संभव हो) के रूप में व्यक्त किया जाता है, और वे आर, जी और बी क्रम में सूचीबद्ध होते हैं। प्रयोग के माध्यम से रंग मिश्रण, लेकिन अगले हम कुछ सामान्य रंगों का उपयोग करके कुछ कोड को कवर करेंगे।</p>
 
-      <script type="text/p5" data-autoplay data-p5-version="1.4.1">
+      <script type="text/p5" data-autoplay data-p5-version="1.4.2">
 function draw() {
   background(255);
   noStroke();
@@ -175,7 +171,7 @@ function draw() {
 
       <p>अल्फा मान भी 0 से 255 तक होता है, जिसमें 0 पूरी तरह से पारदर्शी होता है (यानी, 0% अपारदर्शी) और 255 पूरी तरह से अपारदर्शी (यानी, 100% अपारदर्शी).</p>
 
-      <script type="text/p5" data-autoplay  data-p5-version="1.4.1">
+      <script type="text/p5" data-autoplay  data-p5-version="1.4.2">
   createCanvas(100, 100);
   fill(0,0,255);
   rect(0,0,50,100);
@@ -233,10 +229,18 @@ function draw() {
 
     
     <footer>
-      <h2 class="sr-only">आभार सूची</h2>
-      <p>
-         वर्तमान में p5.js का नेतृत्व करने वाले <a href='http://qianqian-ye.com/' target="_blank">Qianqian Ye</a> हैं| इसकी खोज करने वाले थे <a href='https://lauren-mccarthy.com' target="_blank">Lauren Lee McCarthy</a> p5.js सहयोगियों के एक समुदाय द्वारा विकसित किया गया है और समर्थन करने वाले थे <a href="https://processingfoundation.org/" target="_blank">Processing Foundation</a> और <a href="https://itp.nyu.edu/itp/" target="_blank">NYU ITP</a> पहचान और ग्राफिक डिजाइन करने वाले थे <a href="https://jereljohnson.com/" target="_blank">Jerel Johnson</a>. <a href="/hi/copyright.html">&copy; Info</a>.
-      </p>
+        <h2 class="sr-only">आभार सूची</h2>
+        <ul id="footer-menu" aria-labelledby="menu-title">   
+          <li><a href="https://discourse.processing.org/c/p5js" target=_blank class="other-link">फोरम</a></li>
+          <li><a href="http://github.com/processing/p5.js" target=_blank class="other-link">GitHub</a></li>
+          <li><a href="http://twitter.com/p5xjs" target=_blank class="other-link">Twitter</a></li>
+          <li><a href="https://www.instagram.com/p5xjs/" target=_blank class="other-link">Instagram</a></li>
+          <li><a href="https://discord.gg/SHQ8dH25r9" target=_blank class="other-link">Discord</a></li>
+        </ul>  
+        
+        <p>
+             वर्तमान में p5.js का नेतृत्व करने वाले <a href='http://qianqian-ye.com/' target="_blank">Qianqian Ye</a> हैं| इसकी खोज करने वाले थे <a href='https://lauren-mccarthy.com' target="_blank">Lauren Lee McCarthy</a> p5.js सहयोगियों के एक समुदाय द्वारा विकसित किया गया है और समर्थन करने वाले थे <a href="https://processingfoundation.org/" target="_blank">Processing Foundation</a> और <a href="https://itp.nyu.edu/itp/" target="_blank">NYU ITP</a> पहचान और ग्राफिक डिजाइन करने वाले थे <a href="https://jereljohnson.com/" target="_blank">Jerel Johnson</a>. <a href="/hi/copyright.html">&copy; Info</a>.
+        </p>
     </footer>
 
   </div> <!-- end column-span -->

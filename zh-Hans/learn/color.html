@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="p5.js a JS client-side library for creating graphic and interactive experiences, based on the core principles of Processing.">
     <title tabindex="1">learn | p5.js</title>
-    <link rel="stylesheet" href="/assets/css/all.css?v=0e8127">
+    <link rel="stylesheet" href="/assets/css/all.css?v=05db10">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
 
@@ -74,11 +74,7 @@
         <li><a href="/zh-Hans/books/">书籍</a></li>
         <li><a href="/zh-Hans/community/">社群</a></li>
         <li><a href="https://showcase.p5js.org">案例展示</a></li>
-        <li><a href="https://discourse.processing.org/c/p5js" target=_blank class="other-link">论坛</a></li>
-        <li><a href="http://github.com/processing/p5.js" target=_blank class="other-link">GitHub</a></li>
-        <li><a href="http://twitter.com/p5xjs" target=_blank class="other-link">Twitter</a></li>
-        <li><a href="https://www.instagram.com/p5xjs/" target=_blank class="other-link">Instagram</a></li>
-        <li><a href="https://discord.gg/SHQ8dH25r9" target=_blank class="other-link">Discord</a></li>
+  
       </ul>
     </nav>
   </div>
@@ -118,7 +114,7 @@
 
       <!-- this script only needs to get added once even if there are multiple widget instances -->
       <script src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
-      <script type="text/p5" data-autoplay data-p5-version="1.4.1">
+      <script type="text/p5" data-autoplay data-p5-version="1.4.2">
         function draw() {
   background(150);
   stroke(0);
@@ -148,7 +144,7 @@
 
       <p>这假设所有色颜色都为最亮的亮度，但是您也能同时使用一系列的颜色值，因此一些红加上一些绿再加上一些蓝将等于灰，而一点红加上一点蓝将等于深紫色。虽然这可能需要一点时间来习惯，随着您编程及使用 RGB 颜色值来试验的经验越多，您会对它越熟悉，就如使用您的手指来混合颜色一样。当然您不能单纯说“混合一些红与一点蓝”，您必须提供确切的数值。就如灰渐值，个别颜色的值也是由介于 0（不使用任何该颜色）与 255（完全使用该颜色）之间，而他们的顺序为红（R）、绿（G）及蓝（B）。通过更多的试验您将会对 RGB 颜色更加熟悉，不过接下来我们将介绍一些使用常用颜色的代码。</p>
 
-      <script type="text/p5" data-autoplay data-p5-version="1.4.1">
+      <script type="text/p5" data-autoplay data-p5-version="1.4.2">
 function draw() {
   background(255);
   noStroke();
@@ -176,7 +172,7 @@ function draw() {
 
       <p>Alpha 值也是介于 0 与 255 之间，0 代表完全透明而 255 代表完全不透明。</p>
 
-      <script type="text/p5" data-autoplay  data-p5-version="1.4.1">
+      <script type="text/p5" data-autoplay  data-p5-version="1.4.2">
   createCanvas(100, 100);
   fill(0,0,255);
   rect(0,0,50,100);
@@ -234,10 +230,18 @@ function draw() {
 
     
     <footer>
-      <h2 class="sr-only">归功于</h2>
-      <p>
-        p5.js 目前由<a href='http://qianqian-ye.com/' target="_blank">Qianqian Ye</a>领导，原创者为<a href='https://lauren-mccarthy.com' target="_blank">Lauren Lee McCarthy</a>。p5.js 是在<a href="https://processingfoundation.org/" target="_blank">Processing Foundation</a>和<a href="https://itp.nyu.edu/itp/" target="_blank">NYU ITP</a>的支持下由其合作社群所开发。形象及平面设计<a href="https://jereljohnson.com/" target="_blank">Jerel Johnson</a>。<a href="/zh-Hans/copyright.html">&copy; 版权信息</a>。
-      </p>
+        <h2 class="sr-only">归功于</h2>
+        <ul id="footer-menu" aria-labelledby="menu-title">   
+          <li><a href="https://discourse.processing.org/c/p5js" target=_blank class="other-link">论坛</a></li>
+          <li><a href="http://github.com/processing/p5.js" target=_blank class="other-link">GitHub</a></li>
+          <li><a href="http://twitter.com/p5xjs" target=_blank class="other-link">Twitter</a></li>
+          <li><a href="https://www.instagram.com/p5xjs/" target=_blank class="other-link">Instagram</a></li>
+          <li><a href="https://discord.gg/SHQ8dH25r9" target=_blank class="other-link">Discord</a></li>
+        </ul>  
+        
+        <p>
+            p5.js 目前由<a href='http://qianqian-ye.com/' target="_blank">Qianqian Ye</a>领导，原创者为<a href='https://lauren-mccarthy.com' target="_blank">Lauren Lee McCarthy</a>。p5.js 是在<a href="https://processingfoundation.org/" target="_blank">Processing Foundation</a>和<a href="https://itp.nyu.edu/itp/" target="_blank">NYU ITP</a>的支持下由其合作社群所开发。形象及平面设计<a href="https://jereljohnson.com/" target="_blank">Jerel Johnson</a>。<a href="/zh-Hans/copyright.html">&copy; 版权信息</a>。
+        </p>
     </footer>
 
   </div> <!-- end column-span -->
